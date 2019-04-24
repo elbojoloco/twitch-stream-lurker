@@ -67,4 +67,4 @@ async function run() {
 run();
 
 // // Keep the script alive
-// new Promise(_ => null)
+new Promise(_ => null)
