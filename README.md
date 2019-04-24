@@ -28,6 +28,8 @@ And you're good to go! To run the program simply execute `npm run lurk`
 <a name="todo"></a>
 # To-do
 - [ ] Detect and solve reCAPTCHA
+- [ ] Accept cookies
+- [ ] Accept "mature audiences" wall
 
 **Ideas**
 
