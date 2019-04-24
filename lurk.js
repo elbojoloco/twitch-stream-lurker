@@ -8,7 +8,8 @@ const args = process.argv.slice(2);
 async function run() {
     var browserSettings = {
         headless: args.indexOf('-h') >= 0 ? false : true,
-        slowMo: 50
+        slowMo: 50,
+        args: ['--no-sandbox']
     };
 
     if (settings.executablePath.length) {
@@ -62,9 +63,13 @@ async function run() {
     await page.goto(`https://www.twitch.tv/${settings.channel}`);
 
     await page.screenshot({ path: 'screenshots/visit-hugo.png' });
+
+    setInterval(() => {
+        page.screenshot({ path: 'screenshots/last.png' });
+    }, 5000)
 }
 
 run();
 
-// // Keep the script alive
+// Keep the script alive
 new Promise(_ => null)
