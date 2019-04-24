@@ -12,3 +12,5 @@ const defaultSettings = {
 fs.writeFile('settings.json', JSON.stringify(defaultSettings, null, 4), (error) => {
     console.log('Generated settings.json in project root...');
 });
+
+fs.mkdir('screenshots');
