@@ -1,8 +1,15 @@
 {
     "name": "twitch-stream-lurker",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Logs in to a twitch account and lurks any channel permanently.",
-    "keywords": ["twitch", "lurk", "permanent", "channel", "viewer", "lurker"],
+    "keywords": [
+        "twitch",
+        "lurk",
+        "permanent",
+        "channel",
+        "viewer",
+        "lurker"
+    ],
     "homepage": "https://github.com/elbojoloco/twitch-stream-lurker",
     "bugs": "https://github.com/elbojoloco/twitch-stream-lurker/issues",
     "repository": "https://github.com/elbojoloco/twitch-stream-lurker",
@@ -11,6 +18,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "setup": "node setup.js",
         "lurk": "node lurk.js",
+        "lurk-view": "node lurk.js -h",
         "clear-screenshots": "node clear-screenshots.js"
     },
     "author": "Lucas Snel",

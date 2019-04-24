@@ -3,8 +3,13 @@ const puppeteer = require('puppeteer');
 
 const settings = require('./settings.json');
 
+const args = process.argv.slice(2);
+
 async function run() {
-    var browserSettings = {};
+    var browserSettings = {
+        headless: args.indexOf('-h') >= 0 ? false : true,
+        slowMo: 50
+    };
 
     if (settings.executablePath.length) {
         browserSettings.executablePath = settings.executablePath
@@ -61,5 +66,5 @@ async function run() {
 
 run();
 
-// Keep the script alive
-new Promise(_ => null)
+// // Keep the script alive
+// new Promise(_ => null)
