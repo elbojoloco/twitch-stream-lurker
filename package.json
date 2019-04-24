@@ -1,6 +1,6 @@
 {
     "name": "twitch-stream-lurker",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Logs in to your twitch account and lurks the given channel.",
     "main": "lurk.js",
     "scripts": {
