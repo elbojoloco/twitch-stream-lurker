@@ -1,0 +1,16 @@
+{
+    "name": "twitch-stream-lurker",
+    "version": "0.0.1",
+    "description": "Logs in to your twitch account and lurks the given channel.",
+    "main": "lurk.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "setup": "node setup.js",
+        "lurk": "node lurk.js"
+    },
+    "author": "elbojoloco",
+    "license": "MIT",
+    "dependencies": {
+        "puppeteer": "^1.14.0"
+    }
+}
