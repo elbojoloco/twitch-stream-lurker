@@ -1,12 +1,13 @@
 {
     "name": "twitch-stream-lurker",
     "version": "1.0.0",
-    "description": "Logs in to your twitch account and lurks the given channel.",
+    "description": "Logs in to a twitch account and lurks any channel permanently.",
     "main": "lurk.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "setup": "node setup.js",
-        "lurk": "node lurk.js"
+        "lurk": "node lurk.js",
+        "clear-screenshots": "node clear-screenshots.js"
     },
     "author": "elbojoloco",
     "license": "MIT",
