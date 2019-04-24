@@ -1,7 +1,11 @@
 {
     "name": "twitch-stream-lurker",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Logs in to a twitch account and lurks any channel permanently.",
+    "keywords": ["twitch", "lurk", "permanent", "channel", "viewer", "lurker"],
+    "homepage": "https://github.com/elbojoloco/twitch-stream-lurker",
+    "bugs": "https://github.com/elbojoloco/twitch-stream-lurker/issues",
+    "repository": "https://github.com/elbojoloco/twitch-stream-lurker",
     "main": "lurk.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,9 +13,10 @@
         "lurk": "node lurk.js",
         "clear-screenshots": "node clear-screenshots.js"
     },
-    "author": "elbojoloco",
+    "author": "Lucas Snel",
     "license": "MIT",
     "dependencies": {
-        "puppeteer": "^1.14.0"
+        "puppeteer": "^1.14.0",
+        "node": ">=7.6.0"
     }
 }
